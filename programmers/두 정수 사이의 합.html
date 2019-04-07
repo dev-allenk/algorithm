@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   function solution(a, b) {
+      //     var answer = 0;
+      //     if (a < b) {
+      //       for (var i = a; i <= b; i++) {
+      //         answer += i;
+      //       }
+      //       return answer;
+      //     } else if (a > b) {
+      //       for (var i = b; i <= a; i++) {
+      //         answer += i;
+      //       }
+      //       return answer;
+      //     } else if (a = b) {
+      //         return a;
+      //     }
+      //   }
+      function sum(n1, n2) {
+        let ans = 0;
+        for (let i = n1; i <= n2; i++) {
+          ans += i;
+        }
+        return ans;
+      }
+      function solution(a, b) {
+        var answer = 0;
+        return a <= b ? sum(a, b) : sum(b, a);
+      }
+
+      console.log(solution(3, 5));
+      console.log(solution(3, 3));
+      console.log(solution(5, 3));
+    </script>
+  </body>
+</html>
